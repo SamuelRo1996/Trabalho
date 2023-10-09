@@ -21,7 +21,7 @@ async function buscarDados () {
   }
 }
 
-// Está editando
+
 if (id) {
   buscarDados();
 }
@@ -57,7 +57,7 @@ form.addEventListener('submit', async (event) => {
   });
 
   if (resposta.ok) {
-    window.location.href = 'index.html'
+    window.location.href = 'listar.html'
   } else {
     alert('Ops! Algo deu errado!');
   }

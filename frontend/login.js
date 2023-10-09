@@ -21,7 +21,7 @@ form.addEventListener('submit', async (event) => {
   })
 
   if (resposta.ok) {
-    location.href = 'index.html';
+    location.href = 'listar.html';
   } else if (resposta.status == 401) {
     let dados = await resposta.json();
     alert(dados.mensagem);
